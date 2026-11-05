@@ -1,0 +1,11 @@
+title: 우리의 첫 Push
+url: https://kyong-ho.github.io
+baseurl: /tf-dept-intro
+encoding: UTF-8
+exclude:
+  - README.md
+  - PRACTICE.md
+  - docs
+  - scripts
+  - reference
+  - figures-out
