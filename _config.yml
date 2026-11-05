@@ -5,6 +5,7 @@ encoding: UTF-8
 exclude:
   - README.md
   - PRACTICE.md
+  - AGENTS.md
   - docs
   - scripts
   - reference
