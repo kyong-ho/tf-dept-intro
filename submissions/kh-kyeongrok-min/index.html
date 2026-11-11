@@ -140,6 +140,28 @@ layout: null
       font-size: 1em;
       font-weight: 600;
     }
+    .work-content { min-width: 0; }
+    .work-illustration { margin: 0; }
+    .work-illustration img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .work-illustration figcaption {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    .work-illustration strong {
+      display: block;
+      color: var(--ink);
+      font-size: 16px;
+    }
     .weekly {
       display: grid;
       grid-template-columns: 160px minmax(0, 1fr);
@@ -212,10 +234,15 @@ layout: null
     </header>
     <section class="work" aria-labelledby="work-heading">
       <h2 class="category" id="work-heading">하는 일</h2>
-      <ol>
-        <li>공원, 녹지 등 옥외 공간 계획 및 설계</li>
-        <li>관련 업무 타당성 및 경관성 등 사업에 필요한 절차 수행</li>
-      </ol>
+      <div class="work-content">
+        <figure class="work-illustration">
+          <img src="images/landscape-work-illustration.png" width="1774" height="887" alt="왼쪽은 공원 모형과 계획도, 연필과 자로 공간 설계를 표현하고, 오른쪽은 공원과 건물 주변을 돋보기와 점검표로 검토하는 모습을 표현한 삽도" loading="lazy">
+          <figcaption>
+            <span><strong>1. 공간 계획·설계</strong>공원과 녹지의 모습을 구상해요.</span>
+            <span><strong>2. 타당성·경관 검토</strong>사업 가능성과 주변 경관의 조화를 살펴요.</span>
+          </figcaption>
+        </figure>
+      </div>
     </section>
     <section class="weekly" aria-labelledby="weekly-heading">
       <h2 id="weekly-heading">매주 반복하는 업무</h2>
