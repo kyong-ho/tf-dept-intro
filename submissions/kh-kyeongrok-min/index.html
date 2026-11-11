@@ -1,0 +1,230 @@
+---
+title: 조경부 소개
+department: 조경부
+layout: null
+---
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>조경부 | 부서 소개 · v2.0</title>
+  <meta name="version" content="2.0">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f5ef;
+      --ink: #233d32;
+      --muted: #5d6c61;
+      --line: #cdd5ca;
+      --accent: #dce6b5;
+      --category: #e5eadb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+      line-height: 1.75;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    main {
+      width: min(100% - 60px, 1040px);
+      margin: 28px auto;
+    }
+    .masthead {
+      margin: 0;
+      padding: 12px 0 14px;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--line);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.5;
+      letter-spacing: -.035em;
+    }
+    .hero {
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      align-items: center;
+      min-height: clamp(280px, 38vw, 360px);
+      margin: 24px 0 28px;
+      padding: 38px clamp(24px, 5vw, 52px);
+      overflow: hidden;
+      border-radius: 6px;
+      background: #173c29;
+      color: #fffef8;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg,
+        rgba(9, 30, 20, .86) 0%,
+        rgba(9, 30, 20, .75) 52%,
+        rgba(9, 30, 20, .30) 100%);
+      pointer-events: none;
+    }
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      min-width: 0;
+      text-shadow: 0 2px 8px rgba(0, 15, 7, .5), 0 0 28px rgba(0, 15, 7, .25);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(62px, 9.8vw, 88px);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: .025em;
+    }
+    .department-en {
+      margin: 16px 0 0;
+      color: #f0f5e9;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: .04em;
+      word-spacing: .1em;
+      white-space: nowrap;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+    .hero-visual {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      margin: 0;
+    }
+    .hero-visual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 54%;
+    }
+    .work {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      align-items: start;
+      gap: 24px;
+      padding: 26px 0 28px;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .category {
+      padding: 14px 20px;
+      border-left: 3px solid #728563;
+      background: var(--category);
+      font-weight: 800;
+      letter-spacing: -.025em;
+    }
+    ol {
+      margin: 9px 0 0;
+      padding-left: 1.65em;
+      font-size: 20px;
+      letter-spacing: -.035em;
+    }
+    li { padding-left: 10px; }
+    li + li { margin-top: 18px; }
+    li::marker {
+      color: var(--ink);
+      font-size: 1em;
+      font-weight: 600;
+    }
+    .weekly {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 24px;
+      padding: 28px 30px;
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 4px;
+    }
+    .weekly h2 { color: var(--accent); font-size: 16px; }
+    .weekly p {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -.035em;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 720px) {
+      main { width: calc(100% - 40px); margin: 24px auto; }
+      .masthead { font-size: 22px; }
+      .hero {
+        min-height: clamp(260px, 46vw, 320px);
+        margin: 22px 0 24px;
+        padding: 32px clamp(16px, 4vw, 28px);
+      }
+      h1 { font-size: clamp(52px, 11vw, 68px); letter-spacing: .02em; }
+      .department-en {
+        margin-top: 14px;
+        font-size: clamp(12px, 2.8vw, 17px);
+        letter-spacing: .015em;
+        word-spacing: .05em;
+      }
+      .work, .weekly { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+      .work { padding: 24px 0 28px; }
+      .category { padding: 12px 16px; }
+      ol { margin: 0; }
+      .weekly { padding: 24px; }
+      footer { margin-top: 26px; flex-wrap: wrap; }
+    }
+    @media print {
+      main { width: 100%; margin: 0; }
+      .hero { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .weekly { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+      .weekly h2 { color: var(--ink); }
+      .hero, section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="masthead">부서 소개</p>
+      <div class="hero">
+        <div class="hero-copy">
+          <h1>조경부</h1>
+          <p class="department-en" lang="en">Landscape Architecture Department</p>
+        </div>
+        <figure class="hero-visual">
+          <img src="images/landscape.jpg" width="1536" height="1024" alt="아침 햇살이 비치는 녹음이 우거진 공원의 숲길">
+        </figure>
+      </div>
+    </header>
+    <section class="work" aria-labelledby="work-heading">
+      <h2 class="category" id="work-heading">하는 일</h2>
+      <ol>
+        <li>공원, 녹지 등 옥외 공간 계획 및 설계</li>
+        <li>관련 업무 타당성 및 경관성 등 사업에 필요한 절차 수행</li>
+      </ol>
+    </section>
+    <section class="weekly" aria-labelledby="weekly-heading">
+      <h2 id="weekly-heading">매주 반복하는 업무</h2>
+      <p>국내외 조경 트렌드 및 이슈 조사</p>
+    </section>
+    <footer>
+      <span>만든 날짜</span>
+      <time datetime="2026-10-20">2026년 10월 20일</time>
+    </footer>
+  </main>
+</body>
+</html>
