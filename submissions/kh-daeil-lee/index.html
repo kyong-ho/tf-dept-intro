@@ -1,0 +1,275 @@
+---
+title: '(구)도시계획3부 소개'
+department: '(구)도시계획3부'
+layout: null
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>(구)도시계획3부 | 부서 소개</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #183344;
+      --muted: #607583;
+      --accent: #176b70;
+      --paper: #ffffff;
+      --canvas: #eef4f3;
+      --line: #dce7e5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 56px 22px;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    }
+
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--paper);
+      box-shadow: 0 18px 50px rgba(24, 51, 68, 0.08);
+    }
+
+    header {
+      padding: 42px 48px 38px;
+      background: linear-gradient(135deg, #e2f0ed, #f5f8f4);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 6vw, 44px);
+      letter-spacing: -0.05em;
+    }
+
+    .content { padding: 36px 48px 42px; }
+
+    section + section {
+      margin-top: 32px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 17px;
+      letter-spacing: -0.02em;
+    }
+
+    .infographic {
+      margin: 0 0 26px;
+      padding: 18px;
+      border: 1px solid #dcebe7;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f3f8f6, #eaf3f0);
+    }
+
+    .infographic-art {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 16px;
+      border-radius: 12px;
+    }
+
+    .infographic-caption {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .topic-grid li {
+      display: flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .topic-grid li:last-child { grid-column: 1 / -1; }
+    .duties {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .duties li {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      line-height: 1.7;
+    }
+
+    .number {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding-top: 3px;
+    }
+
+    .weekly {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 22px;
+      border-radius: 16px;
+      background: #f2f7f5;
+    }
+
+    .weekly p { margin: 0; font-size: 16px; font-weight: 700; }
+
+    .tag {
+      flex: 0 0 auto;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: #dcece8;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 18px 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 20px 12px; }
+      main { border-radius: 18px; }
+      header { padding: 32px 24px; }
+      .content { padding: 28px 24px 32px; }
+      footer { padding: 16px 24px; }
+      .weekly { align-items: flex-start; flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">부서 소개</p>
+      <h1>(구)도시계획3부</h1>
+    </header>
+
+    <div class="content">
+      <section aria-labelledby="duties-title">
+        <figure class="infographic" aria-labelledby="infographic-caption">
+          <svg class="infographic-art" viewBox="0 0 680 180" role="img" aria-labelledby="urban-plan-title urban-plan-description">
+            <title id="urban-plan-title">도시계획 구역도</title>
+            <desc id="urban-plan-description">주거, 산업, 녹지 구역과 도로망을 색으로 구분한 도시계획 그림입니다.</desc>
+            <rect width="680" height="180" rx="14" fill="#edf4f1" />
+            <rect x="14" y="14" width="456" height="152" rx="12" fill="#f9fbfa" stroke="#d2e1dc" stroke-width="2" />
+            <path d="M35 34H452M35 60H452M35 86H452M35 112H452M35 138H452M70 22V158M110 22V158M150 22V158M190 22V158M230 22V158M270 22V158M310 22V158M350 22V158M390 22V158M430 22V158" fill="none" stroke="#e3ece8" stroke-width="1" />
+            <rect x="28" y="27" width="112" height="52" rx="7" fill="#d8eadc" />
+            <rect x="166" y="27" width="114" height="52" rx="7" fill="#dce9f1" />
+            <rect x="306" y="27" width="146" height="52" rx="7" fill="#f3e6d2" />
+            <rect x="28" y="119" width="112" height="34" rx="7" fill="#dce9f1" />
+            <rect x="166" y="119" width="114" height="34" rx="7" fill="#f3e6d2" />
+            <rect x="306" y="119" width="146" height="34" rx="7" fill="#d8eadc" />
+            <path d="M21 99H463M153 20V160M293 20V160" fill="none" stroke="#fff" stroke-width="17" />
+            <path d="M21 99H463M153 20V160M293 20V160" fill="none" stroke="#b4c4c0" stroke-width="2" stroke-dasharray="7 7" />
+            <rect x="21" y="20" width="442" height="140" rx="9" fill="none" stroke="#176b70" stroke-width="2" stroke-dasharray="7 5" />
+            <path d="M44 54c0-9 7-16 16-16s16 7 16 16c0 11-16 22-16 22S44 65 44 54Z" fill="#176b70" />
+            <circle cx="60" cy="54" r="5" fill="#fff" />
+            <rect x="187" y="40" width="20" height="26" rx="3" fill="#8aaebd" />
+            <rect x="214" y="47" width="17" height="19" rx="3" fill="#8aaebd" />
+            <rect x="338" y="39" width="22" height="27" rx="3" fill="#bd9866" />
+            <rect x="368" y="46" width="23" height="20" rx="3" fill="#bd9866" />
+            <circle cx="333" cy="134" r="8" fill="#75a988" />
+            <circle cx="359" cy="134" r="8" fill="#75a988" />
+            <circle cx="385" cy="134" r="8" fill="#75a988" />
+            <rect x="491" y="14" width="175" height="152" rx="12" fill="#fff" stroke="#dce7e5" stroke-width="2" />
+            <text x="509" y="42" fill="#183344" font-size="14" font-weight="700" font-family="Malgun Gothic, sans-serif">계획 구역</text>
+            <rect x="510" y="57" width="14" height="14" rx="3" fill="#dce9f1" />
+            <text x="534" y="69" fill="#607583" font-size="12" font-family="Malgun Gothic, sans-serif">주거</text>
+            <rect x="510" y="83" width="14" height="14" rx="3" fill="#f3e6d2" />
+            <text x="534" y="95" fill="#607583" font-size="12" font-family="Malgun Gothic, sans-serif">산업</text>
+            <rect x="510" y="109" width="14" height="14" rx="3" fill="#d8eadc" />
+            <text x="534" y="121" fill="#607583" font-size="12" font-family="Malgun Gothic, sans-serif">녹지</text>
+            <path d="M510 145h18" fill="none" stroke="#b4c4c0" stroke-width="3" stroke-dasharray="5 4" />
+            <text x="534" y="149" fill="#607583" font-size="12" font-family="Malgun Gothic, sans-serif">도로</text>
+          </svg>
+          <div>
+            <figcaption class="infographic-caption" id="infographic-caption">주요 업무 분야</figcaption>
+            <ul class="topic-grid">
+              <li>도시기본계획</li>
+              <li>도시관리계획 재정비</li>
+              <li>산업단지 조성</li>
+              <li>타당성 조사</li>
+              <li>도시계획시설 결정(변경)</li>
+            </ul>
+          </div>
+        </figure>
+        <h2 id="duties-title">하는 일</h2>
+        <ol class="duties">
+          <li><span class="number">01</span><span>도시기본계획, 도시관리계획 재정비, 산업단지 조성, 타당성 조사 업무</span></li>
+          <li><span class="number">02</span><span>도시계획시설 결정(변경)</span></li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="weekly-title">
+        <h2 id="weekly-title">매주 반복하는 업무</h2>
+        <div class="weekly">
+          <p>주간회의록 작성</p>
+          <span class="tag">매주</span>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <span>만든 날짜</span>
+      <time datetime="2026-10-20">2026년 10월 20일</time>
+    </footer>
+  </main>
+</body>
+</html>
+
+
+
+
+
