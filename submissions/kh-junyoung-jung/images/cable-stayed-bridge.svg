@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">노을빛 바다 위의 사장교</title>
+  <desc id="desc">두 주탑에서 부채처럼 펼쳐진 케이블이 교량 상판을 지탱하는 사장교 그림</desc>
+  <defs>
+    <linearGradient id="sky" x2="0%" y2="100%"><stop stop-color="#173e68"/><stop offset=".65" stop-color="#668ba5"/><stop offset="1" stop-color="#efc4a4"/></linearGradient>
+    <linearGradient id="sea" x2="0%" y2="100%"><stop stop-color="#527f96"/><stop offset="1" stop-color="#163e60"/></linearGradient>
+    <linearGradient id="tower"><stop stop-color="#b0c7d4"/><stop offset=".5" stop-color="#f0eee2"/><stop offset="1" stop-color="#6c91a9"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1200v520H0z"/>
+  <circle cx="937" cy="185" r="55" fill="#ffe1b4" opacity=".9"/>
+  <path d="M0 302 103 260 175 287 286 232 401 292 514 262 648 298 792 254 889 291 1041 239 1200 284V355H0Z" fill="#375e79" opacity=".48"/>
+  <path fill="url(#sea)" d="M0 329h1200v191H0z"/>
+  <g fill="none" stroke="#a9c7d3" opacity=".24" stroke-linecap="round">
+    <path d="M28 385h142m48 34h186m-310 48h205m228-73h139m-197 73h245m107-86h179m-207 46h220m-103 54h154"/>
+    <path d="M891 354h94m-111 16h123m-102 17h79" stroke="#ffd5ac" stroke-width="3"/>
+  </g>
+  <g stroke="#e8e5d9" stroke-width="2" opacity=".88">
+    <path d="M360 93 80 326M360 93 125 326M360 93 170 326M360 93 215 326M360 93 260 326M360 93 305 326M360 93 405 326M360 93 450 326M360 93 495 326M360 93 540 326M360 93 585 326"/>
+    <path d="M840 93 615 326M840 93 660 326M840 93 705 326M840 93 750 326M840 93 795 326M840 93 885 326M840 93 930 326M840 93 975 326M840 93 1020 326M840 93 1065 326M840 93 1110 326"/>
+  </g>
+  <g fill="url(#tower)">
+    <path d="M349 77h22l35 319h-22L360 161l-24 235h-22zM829 77h22l35 319h-22L840 161l-24 235h-22z"/>
+    <path d="M335 267h50v12h-50zM815 267h50v12h-50z"/>
+  </g>
+  <path d="M0 326h1200v14H0z" fill="#16334e"/>
+  <path d="M0 324h1200" stroke="#ffdcad" stroke-width="4"/>
+  <path d="M0 316h1200" stroke="#d1dde1" stroke-width="2"/>
+  <path d="M0 319h1200" stroke="#d1dde1" stroke-width="6" stroke-dasharray="2 19"/>
+  <path d="M95 340h15v63H95zM1090 340h15v63h-15z" fill="#7899ab"/>
+  <path d="M0 502c220-26 358 9 581-6s392-20 619-4v28H0z" fill="#10324d" opacity=".5"/>
+</svg>
