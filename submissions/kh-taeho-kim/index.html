@@ -8,7 +8,7 @@ layout: null
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>토목설계 º부서 소개 | 도시개발부</title>
+  <title>부서 소개 | 도시개발부</title>
   <style>
     :root { color-scheme: dark; --bg: #101a21; --text: #edf4f5; --muted: #aec1ca; --accent: #7bc8ce; --line: #2c414c; }
     * { box-sizing: border-box; }
@@ -21,50 +21,66 @@ layout: null
     header { padding: 30px 0 38px; }
     p { margin: 0; word-break: keep-all; overflow-wrap: anywhere; }
     .eyebrow { margin: 0 0 16px; font-size: 11px; letter-spacing: .2em; color: var(--accent); }
+    header > .eyebrow { font-size: 26px; font-weight: 400; letter-spacing: -.03em; word-spacing: -.08em; color: #ffffff; }
     .hero { position: relative; min-height: 350px; display: flex; align-items: center; overflow: hidden; border: 1px solid #405966; border-radius: 6px; isolation: isolate; }
     .hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
     .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #081820f2 0%, #0b2027d9 35%, #0b202754 70%, #0b202726 100%); z-index: -1; }
-    .hero-copy { padding: 48px; max-width: 650px; }
-    h1 { margin: 0; font-size: clamp(36px, 5vw, 58px); font-weight: 600; line-height: 1.25; letter-spacing: -.04em; }
-    .english { margin-top: 10px; font-size: 11px; letter-spacing: .16em; color: #b6e0e2; }
-    .intro { margin-top: 27px; font-size: 14px; color: #d1e1e5; }
+    .hero-copy { padding: 48px; max-width: 650px; text-align: left; }
+    h1 { margin: 0; font-size: clamp(40px, 5.5vw, 64px); font-weight: 600; line-height: 1.25; letter-spacing: -.04em; }
+    .english { margin-top: 12px; font-size: clamp(14px, 1.5vw, 16px); letter-spacing: .16em; color: #ffffff; }
     section { padding: 30px 0 38px; border-top: 1px solid var(--line); }
     h2 { margin: 0 0 20px; font-size: 26px; font-weight: 400; letter-spacing: -.03em; }
-    .work-list { margin: 0; padding-left: 22px; color: var(--muted); }
-    .work-list li + li { margin-top: 12px; }
-    .work-list li::marker { color: var(--accent); }
+    .weekly-heading { margin: 0; font-size: 16px; font-weight: 400; letter-spacing: -.03em; color: var(--accent); }
+    .weekly-task { margin: 0; font-size: 20px; font-weight: 400; letter-spacing: -.03em; }
+    .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    .work-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: #172932; }
+    .work-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+    .work-card figcaption { padding: 22px 24px 26px; }
+    .work-card h3 { margin: 0 0 8px; font-size: 20px; font-weight: 500; letter-spacing: -.03em; }
+    .work-card p { color: var(--muted); font-size: 14px; }
+    @media (max-width: 600px) { .work-grid { grid-template-columns: 1fr; gap: 18px; } }
     .weekly { display: flex; align-items: baseline; gap: 14px 30px; flex-wrap: wrap; padding: 22px 24px; border-left: 3px solid var(--accent); background: #172932; }
-    .weekly strong { font-size: 19px; font-weight: 400; }
-    .weekly span { color: var(--muted); font-size: 14px; }
     footer { padding: 20px 0 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
-    @media (max-width: 720px) { main { width: calc(100% - 36px); } .brand { min-height: 62px; } header { padding: 24px 0 28px; } .hero { min-height: 300px; } .hero-copy { padding: 30px 24px; } .hero-image { object-position: 65% center; } .hero::after { background: linear-gradient(90deg, #081820ed, #0b20278c); } .intro { font-size: 13px; } }
+    @media (max-width: 720px) { main { width: calc(100% - 36px); } .brand { min-height: 62px; } header { padding: 24px 0 28px; } .hero { min-height: 300px; } .hero-copy { padding: 30px 24px; } .hero-image { object-position: 65% center; } .hero::after { background: linear-gradient(90deg, #081820ed, #0b20278c); } }
   </style>
 </head>
 <body>
   <main>
     <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>도시개발부</span></div>
     <header>
-      <p class="eyebrow">토목설계 º부서 소개</p>
+      <p class="eyebrow">부서 소개</p>
       <div class="hero">
         <img class="hero-image" src="images/city-development.svg" alt="건물과 도로, 녹지가 어우러진 도시개발 구상 그림">
         <div class="hero-copy">
           <h1>도시개발부</h1>
           <p class="english" lang="en">Urban Development Department</p>
-          <p class="intro">사람과 공간을 잇는 도시,<br>더 나은 일상의 바탕을 그립니다.</p>
         </div>
       </div>
     </header>
     <section aria-labelledby="work-title">
       <h2 id="work-title">하는일</h2>
-      <ul class="work-list">
-        <li>도시개발구역 지정, 타당성 조사 및 인허가 업무를 수행합니다.</li>
-        <li>도로와 상하수도 등 도시 기반시설을 설계합니다.</li>
-      </ul>
+      <div class="work-grid">
+        <figure class="work-card">
+          <img src="images/urban-planning.svg" alt="개발 구역과 녹지를 표시한 도시계획 지도와 검토 서류 그림" width="640" height="360">
+          <figcaption>
+            <h3>도시개발 계획·인허가</h3>
+            <p>개발할 구역을 정하고 사업 가능성을 검토하며, 필요한 인허가를 준비합니다.</p>
+          </figcaption>
+        </figure>
+        <figure class="work-card">
+          <img src="images/urban-infrastructure.svg" alt="도시의 도로와 땅 아래 상하수도 시설을 표현한 개념 그림" width="640" height="360">
+          <figcaption>
+            <h3>도로·상하수도 설계</h3>
+            <p>도로와 상하수도 등 도시 생활의 바탕이 되는 기반시설을 설계합니다.</p>
+          </figcaption>
+        </figure>
+      </div>
     </section>
     <section aria-labelledby="weekly-title">
-      <p class="eyebrow">매주 반복하는 업무</p>
-      <h2 id="weekly-title">제안서 작성</h2>
-      <p class="weekly"><strong>목차 정리</strong><span>주요 내용 작성</span></p>
+      <div class="weekly">
+        <h2 id="weekly-title" class="weekly-heading">매주 반복하는 업무</h2>
+        <p class="weekly-task">제안서 작성</p>
+      </div>
     </section>
     <footer>만든 날짜 · <time datetime="2026-10-21">2026년 10월 21일</time></footer>
   </main>
