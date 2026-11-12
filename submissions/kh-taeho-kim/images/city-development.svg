@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640">
+  <defs>
+    <linearGradient id="ground" x2="1" y2="1"><stop stop-color="#183344"/><stop offset="1" stop-color="#345e67"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#789eaa"/><stop offset="1" stop-color="#36556a"/></linearGradient>
+    <pattern id="windows" width="14" height="18" patternUnits="userSpaceOnUse"><rect width="14" height="18" fill="url(#glass)"/><path d="M0 0h14M0 0v18" stroke="#aecbd0" stroke-opacity=".3"/></pattern>
+    <g id="tower"><path d="M0 0 48-23 91-4 44 20Z" fill="#b2c8ca"/><path d="M0 0v132l44 21V20Z" fill="url(#windows)"/><path d="M44 20v133l47-24V-4Z" fill="#426878"/><path d="m52 35 30-15m-30 33 30-15m-30 33 30-15m-30 33 30-15m-30 33 30-15m-30 33 30-15" stroke="#b2ced2" stroke-opacity=".35"/><path d="m11 1 37-17L79-3 44 12Z" fill="#708e98"/></g>
+    <g id="tree"><ellipse cy="10" rx="16" ry="7" fill="#0a282e" opacity=".4"/><path d="M0 0v15" stroke="#6b8980" stroke-width="3"/><circle cy="-3" r="14" fill="#366c60"/><circle cx="-4" cy="-7" r="9" fill="#528f77"/></g>
+  </defs>
+  <path fill="url(#ground)" d="M0 0h1440v640H0z"/>
+  <g transform="translate(120 90) rotate(-9 700 250)">
+    <path d="M-150 405 1200-70M-100 635 1400 105M460-100 1000 750M90-100 610 750" stroke="#8bada7" stroke-width="74"/>
+    <path d="M-150 405 1200-70M-100 635 1400 105M460-100 1000 750M90-100 610 750" stroke="#314b57" stroke-width="58"/>
+    <path d="M-150 405 1200-70M-100 635 1400 105M460-100 1000 750M90-100 610 750" stroke="#c7d8d0" stroke-width="2" stroke-dasharray="13 17" opacity=".6"/>
+    <path d="m635 211 235-83 73 122-229 82Z" fill="#316a59"/>
+    <path d="m659 231 185-66 48 76-164 61" fill="none" stroke="#a6b7a0" stroke-width="5"/>
+    <g><use href="#tree" x="692" y="213"/><use href="#tree" x="734" y="199"/><use href="#tree" x="779" y="184"/><use href="#tree" x="826" y="172"/><use href="#tree" x="856" y="221"/><use href="#tree" x="815" y="251"/><use href="#tree" x="767" y="271"/><use href="#tree" x="718" y="275"/></g>
+    <g opacity=".65"><use href="#tower" x="10" y="145"/><use href="#tower" x="140" y="100"/><use href="#tower" x="275" y="54"/></g>
+    <use href="#tower" x="510" y="15"/><use href="#tower" x="620" y="-25"/>
+    <use href="#tower" x="850" y="-95" transform="translate(0 30)"/>
+    <use href="#tower" x="1010" y="55"/><use href="#tower" x="1120" y="16"/>
+    <use href="#tower" x="1010" y="345"/><use href="#tower" x="1120" y="305"/>
+    <use href="#tower" x="735" y="430"/><use href="#tower" x="845" y="390"/>
+    <g opacity=".8"><use href="#tower" x="320" y="350"/><use href="#tower" x="440" y="307"/></g>
+    <g><use href="#tree" x="990" y="263"/><use href="#tree" x="1030" y="249"/><use href="#tree" x="1070" y="235"/><use href="#tree" x="1110" y="221"/><use href="#tree" x="1150" y="207"/></g>
+  </g>
+</svg>
