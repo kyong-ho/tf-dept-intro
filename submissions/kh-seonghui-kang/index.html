@@ -1,0 +1,352 @@
+---
+title: "스마트건설 연구팀 | 부서 소개"
+department: "스마트건설 연구팀"
+layout: null
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>스마트건설 연구팀 | 부서 소개</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+      color: #173d2c;
+      background: #eef7e9;
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+
+    .page {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      padding: 40px clamp(24px, 6vw, 72px) 28px;
+    }
+
+    .masthead {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #c2d9b6;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .mark {
+      display: grid;
+      grid-template-columns: repeat(2, 10px);
+      gap: 3px;
+      transform: rotate(-8deg);
+    }
+
+    .mark span { height: 10px; background: #43824b; border-radius: 2px; }
+    .mark span:last-child { background: #9bce7b; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(260px, 1fr);
+      align-items: center;
+      gap: 32px;
+      padding: 44px 0 40px;
+    }
+
+    .hero-copy { min-width: 0; }
+
+    .hero-art {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #b1cc9c;
+      border-radius: 26px;
+      background: linear-gradient(145deg, #d8edc8, #a9d58f);
+    }
+
+    .hero-art svg { display: block; width: 100%; height: auto; }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #416b3c;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: #5c8a48;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 800;
+      line-height: 1.3;
+      letter-spacing: -0.065em;
+      overflow-wrap: anywhere;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 32px;
+      border-radius: 22px;
+    }
+
+    .work-card {
+      background: #fbfdf7;
+      border: 1px solid #cbdcbe;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .work-card h2 { color: #41623a; }
+
+    .work-table {
+      width: 100%;
+      margin-top: 22px;
+      border-collapse: collapse;
+      table-layout: fixed;
+      text-align: left;
+      font-size: clamp(17px, 2.2vw, 21px);
+    }
+
+    .work-table th, .work-table td {
+      padding: 16px 14px;
+      border: 1px solid #c2d9b6;
+      vertical-align: middle;
+    }
+
+    .work-table thead th {
+      background: #d8edc8;
+      color: #365930;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .work-table thead th:first-child { width: 64px; text-align: center; }
+
+    .work-table tbody th {
+      background: #eef7e9;
+      color: #4c6c40;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .work-table td { font-weight: 600; overflow-wrap: anywhere; }
+
+    .weekly-card {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #9bce7b;
+      color: #173d2c;
+    }
+
+    .weekly-card h2 { color: #2e5228; }
+
+    .frequency {
+      margin: 30px 0 12px;
+      padding: 3px 12px;
+      border: 1px solid #628952;
+      border-radius: 30px;
+      color: #2e5228;
+      font-size: 12px;
+    }
+
+    .weekly-task {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: -0.04em;
+    }
+
+    .weekly-card::after {
+      content: "";
+      position: absolute;
+      right: -38px;
+      bottom: -74px;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #6f9956;
+      border-radius: 50%;
+      box-shadow: 0 0 0 24px #8fc66e, 0 0 0 25px #6f9956;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    footer {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+      color: #4d6843;
+      font-size: 13px;
+    }
+
+    time { color: #31542c; font-variant-numeric: tabular-nums; }
+
+    @media (max-width: 680px) {
+      .page { padding-top: 26px; }
+      .hero { grid-template-columns: 1fr; gap: 28px; padding: 36px 0 32px; }
+      .hero-art { max-width: 480px; justify-self: center; border-radius: 20px; }
+      .cards { grid-template-columns: 1fr; gap: 16px; }
+      .card { padding: 26px; border-radius: 18px; }
+      .work-table { margin-top: 18px; }
+      .work-table th, .work-table td { padding: 14px 10px; }
+      .work-table thead th:first-child { width: 52px; }
+      .weekly-card { min-height: 230px; }
+      .frequency { margin-top: 24px; }
+      footer { justify-content: flex-start; }
+    }
+
+    @media print {
+      :root { background: #fff; }
+      .page { width: 100%; padding: 20px; }
+      .hero { padding: 36px 0; }
+      .cards { grid-template-columns: 1.35fr 1fr; }
+      .weekly-card { color: #173d2c; background: #eef7e9; border: 1px solid #c2d9b6; }
+      .weekly-card h2, .frequency { color: #31542c; }
+      .weekly-card::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span>부서 소개</span>
+    </header>
+
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">우리 부서</p>
+        <h1>스마트건설 연구팀</h1>
+      </div>
+      <figure class="hero-art">
+        <svg viewBox="0 0 480 400" width="480" height="400" role="img" aria-labelledby="construction-title" aria-describedby="construction-description">
+          <title id="construction-title">스마트건설과 건물 모델링</title>
+          <desc id="construction-description">설계 도면 위에 입체 건물 모형과 자재를 들어 올리는 장비를 그리고, 건물의 각 모서리를 점과 선으로 연결한 그림입니다.</desc>
+          <g stroke-linejoin="round" stroke-linecap="round">
+            <circle cx="393" cy="71" r="34" fill="#9bce7b" />
+            <circle cx="412" cy="124" r="5" fill="#74ac55" />
+            <circle cx="365" cy="42" r="3" fill="#5c8a48" />
+
+            <path d="M58 290 239 193 422 290 240 387Z" fill="#f2f8e8" stroke="#6f9956" stroke-width="1.5" />
+            <path d="m88 306 181-97m-149 114 181-97m-149 114 181-97m-149 114 181-97m-149 114 181-97M88 274l183 97M120 257l183 97M152 240l183 97M184 223l183 97M216 206l183 97" fill="none" stroke="#c8ddb9" stroke-width="1" />
+
+            <g fill="#9fc57a" stroke="#4b6d3a" stroke-width="2">
+              <path d="M86 105h16v148H86Z" />
+              <path d="m86 105 16 20-16 20 16 20-16 20 16 20-16 20 16 20" fill="none" />
+              <path d="M48 93h153v12H48Z" />
+              <path d="m54 93 40-28 80 28M94 65v28" fill="none" />
+              <path d="M66 105v89c0 11 15 11 15 0" fill="none" />
+              <path d="M78 253h32v9H78Z" />
+            </g>
+
+            <path d="m86 296 57-31 61 35-56 32Z" fill="#fbfdf7" stroke="#789b5d" stroke-width="1.5" />
+            <path d="m114 281 61 35m-60-4 56-30m-27 14 14 8" fill="none" stroke="#789b5d" stroke-width="1.5" />
+
+            <path d="m153 268 86 50 100-58 18 11-118 68-105-60Z" fill="#8ca870" opacity="0.5" />
+            <path d="m153 140 86 50v128l-86-50Z" fill="#8dba68" stroke="#4b6d3a" stroke-width="2" />
+            <path d="m239 190 100-58v128l-100 58Z" fill="#d8edc8" stroke="#4b6d3a" stroke-width="2" />
+            <path d="m153 140 101-56 85 48-100 58Z" fill="#fbfdf7" stroke="#4b6d3a" stroke-width="2" />
+            <path d="m178 140 76-42 59 34-74 43Z" fill="#9bce7b" stroke="#6f9956" stroke-width="1.5" />
+            <path d="m198 141 56-31 37 22-53 31Z" fill="#e8f5da" />
+
+            <g fill="none" stroke="#739558" stroke-width="1.5">
+              <path d="m153 172 86 50 100-58m-186 36 86 50 100-58m-186 36 86 50 100-58" />
+              <path d="M181 156v128m29-111v128m60-129v128m33-147v128" />
+            </g>
+            <path d="m248 203 16-9v20l-16 9Zm30-17 17-10v20l-17 10Zm33-19 18-10v20l-18 10Z" fill="#5b8f47" opacity="0.65" />
+            <path d="m248 267 16-9v20l-16 9Zm63-36 18-10v20l-18 10Z" fill="#5b8f47" opacity="0.65" />
+
+            <g fill="none" stroke="#4b6d3a" stroke-width="1.5" stroke-dasharray="5 6">
+              <path d="m153 112 101-56 85 48-100 58Z" />
+              <path d="M153 112v28m101-84v28m85 20v28m-100 30v28" />
+              <path d="m339 208 26 15h25M153 238h-32l-14 16" />
+            </g>
+            <g fill="#fbfdf7" stroke="#4b6d3a" stroke-width="2">
+              <circle cx="153" cy="112" r="4" />
+              <circle cx="254" cy="56" r="4" />
+              <circle cx="339" cy="104" r="4" />
+              <circle cx="239" cy="162" r="4" />
+              <circle cx="239" cy="318" r="4" />
+              <circle cx="339" cy="208" r="4" />
+            </g>
+
+            <rect x="365" y="233" width="78" height="59" rx="9" fill="#fbfdf7" stroke="#6f9956" stroke-width="1.5" />
+            <path d="M378 245h30" stroke="#4b6d3a" stroke-width="3" />
+            <path d="M379 278v-11m14 11v-19m14 19v-14m14 14v-26" stroke="#43824b" stroke-width="7" />
+            <circle cx="107" cy="254" r="5" fill="#fbfdf7" stroke="#4b6d3a" stroke-width="2" />
+          </g>
+        </svg>
+      </figure>
+    </div>
+
+    <div class="cards">
+      <section class="card work-card" aria-labelledby="work-title">
+        <h2 id="work-title">하는 일</h2>
+        <table class="work-table" aria-labelledby="work-title">
+          <thead>
+            <tr>
+              <th scope="col">번호</th>
+              <th scope="col">업무 내용</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">01</th>
+              <td>BIM 모델링</td>
+            </tr>
+            <tr>
+              <th scope="row">02</th>
+              <td>스마트 건설 연구</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card weekly-card" aria-labelledby="weekly-title">
+        <h2 id="weekly-title">매주 반복하는 업무</h2>
+        <p class="frequency">매주</p>
+        <p class="weekly-task">모델링</p>
+      </section>
+    </div>
+
+    <footer>
+      <span>만든 날짜</span>
+      <time datetime="2026-10-22">2026년 10월 22일</time>
+    </footer>
+  </main>
+</body>
+</html>
