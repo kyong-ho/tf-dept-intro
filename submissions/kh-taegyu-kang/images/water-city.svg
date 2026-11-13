@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="650" viewBox="0 0 860 650" role="img" aria-label="물 공급시설과 도시의 지하 관로를 표현한 가상 도시 삽화">
+<defs><linearGradient id="water" x2="1" y2="1"><stop stop-color="#65c9cc"/><stop offset="1" stop-color="#1b879a"/></linearGradient><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M38 0H0V38" fill="none" stroke="#2b5363" stroke-width=".7"/></pattern><pattern id="windows" width="22" height="26" patternUnits="userSpaceOnUse"><rect width="9" height="13" x="4" y="5" fill="#a2d8dc"/></pattern></defs>
+<rect width="860" height="650" fill="url(#grid)"/>
+<g fill="none" stroke="#426978"><ellipse cx="440" cy="358" rx="370" ry="230" stroke-dasharray="4 9"/><ellipse cx="440" cy="358" rx="310" ry="180"/></g>
+<path d="M76 326L419 137L799 339L455 551Z" fill="#dce9df"/><path d="M76 326V384L455 606V551Z" fill="#345a64"/><path d="M455 551V606L799 396V339Z" fill="#1c4353"/>
+<path d="M89 326L264 230L458 338L303 448Z" fill="#96b7a5"/><path d="M125 332L261 257L412 340L291 415Z" fill="#c2d4bd"/>
+<path d="M267 229L328 195L672 402L612 439Z" fill="#a2b8b6"/><path d="M295 214L641 420" stroke="#edf4e8" stroke-width="3" stroke-dasharray="11 10"/>
+<path d="M359 172L419 138L797 340L737 376Z" fill="url(#water)"/><path d="M388 166L760 367M407 153L781 352" fill="none" stroke="#9be4dd" stroke-width="2"/>
+<path d="M350 262L396 238L657 390L611 418Z" fill="#f5f6eb"/>
+<g><path d="M395 304L450 273V133L395 163Z" fill="#9abac0"/><path d="M450 273L509 307V167L450 133Z" fill="#547f91"/><path d="M395 163L450 133L509 167L454 198Z" fill="#e1f1ea"/><path d="M405 171L440 152V258L405 278Z" fill="url(#windows)"/><path d="M460 197V269M482 210V282" stroke="#9dcdd1" stroke-width="7"/></g>
+<g><path d="M494 363L550 331V205L494 237Z" fill="#bbd6d3"/><path d="M550 331L602 361V235L550 205Z" fill="#6893a1"/><path d="M494 237L550 205L602 235L546 268Z" fill="#e9f2e6"/><path d="M506 248L536 231V318L506 335Z" fill="url(#windows)"/><path d="M561 269V328M582 281V340" stroke="#b4dcd8" stroke-width="6"/></g>
+<g><path d="M580 325L622 301V235L580 259Z" fill="#bdd7ce"/><path d="M622 301L672 328V262L622 235Z" fill="#679395"/><path d="M580 259L622 235L672 262L630 288Z" fill="#edf4e6"/><path d="M590 270V301M608 261V291M640 297V315M658 288V323" stroke="#1d6075" stroke-width="6"/></g>
+<g><path d="M343 348L378 328V260L343 279Z" fill="#a6ccc5"/><path d="M378 328L420 352V284L378 260Z" fill="#628e99"/><path d="M343 279L378 260L420 284L385 305Z" fill="#ebf1e5"/><path d="M353 291V325M367 283V316M393 314V336" stroke="#e6efe2" stroke-width="6"/></g>
+<g><path d="M169 301V339C169 361 259 361 259 339V301Z" fill="#65a4aa"/><ellipse cx="214" cy="301" rx="45" ry="24" fill="#e4f1e8"/><ellipse cx="214" cy="301" rx="35" ry="17" fill="url(#water)"/><path d="M174 306H251" stroke="#b2ede0" stroke-width="2"/>
+<path d="M246 346V379C246 402 336 402 336 379V346Z" fill="#65a4aa"/><ellipse cx="291" cy="346" rx="45" ry="24" fill="#e4f1e8"/><ellipse cx="291" cy="346" rx="35" ry="17" fill="url(#water)"/>
+<path d="M219 253L248 237L292 262L263 279Z" fill="#f1f4e5"/><path d="M219 253V282L263 308V279Z" fill="#9fc5bf"/><path d="M263 279V308L292 290V262Z" fill="#4a8291"/></g>
+<g stroke="#56d3cd" fill="none" stroke-width="12" stroke-linejoin="round"><path d="M141 377L385 516L598 391M291 414L290 462M385 516L386 553M484 458L550 499L701 410"/></g>
+<g fill="#bffaf0" stroke="#1f939d" stroke-width="5"><ellipse cx="290" cy="462" rx="12" ry="8"/><ellipse cx="385" cy="516" rx="12" ry="8"/><ellipse cx="484" cy="458" rx="12" ry="8"/><ellipse cx="550" cy="499" rx="12" ry="8"/></g>
+<g stroke="#c3f0e3" stroke-width="2" fill="none"><path d="M187 403L198 409L187 410M331 488L342 494L331 495M431 482L442 475L440 485M625 457L636 451L632 461"/></g>
+<g fill="#5f9f87" stroke="#bdd9bc" stroke-width="2"><path d="M104 317V276M119 325V291M705 340V294M727 353V310M468 426V390M501 443V404"/><ellipse cx="104" cy="273" rx="17" ry="25"/><ellipse cx="119" cy="290" rx="13" ry="21"/><ellipse cx="705" cy="291" rx="18" ry="27"/><ellipse cx="727" cy="307" rx="14" ry="23"/><ellipse cx="468" cy="385" rx="14" ry="23"/><ellipse cx="501" cy="402" rx="17" ry="25"/></g>
+<g fill="none" stroke="#7eb5bb" stroke-width="1"><path d="M214 267L151 183H61M479 143L555 82H724M625 451L714 488H796"/></g>
+<g fill="#c0dedf" font-family="sans-serif" font-size="11" letter-spacing="2"><text x="61" y="171">WATER FACILITY</text><text x="582" y="70">CONNECTED CITY</text><text x="693" y="511">PIPE NETWORK</text></g>
+<g fill="#b9ecdb"><circle cx="214" cy="267" r="4"/><circle cx="479" cy="143" r="4"/><circle cx="625" cy="451" r="4"/></g>
+</svg>
